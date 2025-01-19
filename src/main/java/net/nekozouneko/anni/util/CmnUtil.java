@@ -105,8 +105,8 @@ public final class CmnUtil {
         return true;
     }
 
-    public static boolean hasPersistentContainer(ItemStack item) {
-        return item != null && !item.getType().isAir();
+    public static int calcExp(int level) {
+        return ((int) Math.sqrt(15) * 1000) * level;
     }
 
 }
